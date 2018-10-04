@@ -1,0 +1,13 @@
+[package]
+name = "fletchsum"
+version = "0.1.3"
+authors = ["Romain Failla <rigbuntu@gmail.com>"]
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
+
+[dependencies]
+clap = {version = "2.32.0", features = ["yaml"]}

@@ -1,0 +1,16 @@
+name: fletchsum
+version: "0.1.3"
+author: Romain "rigma" Failla <rigbuntu@gmail.com>
+about: A Rust implementation of the Fletcher-64 checksum
+args:
+    - binary:
+        short: b
+        long: binary
+        help: Read in binary mode
+    - text:
+        short: t
+        long: text
+        help: Read in text mode (default)
+    - FILE:
+        help: The input file for the checksum. If no FILE is provided, or when FILE is -, it reads the standard input
+        index: 1
